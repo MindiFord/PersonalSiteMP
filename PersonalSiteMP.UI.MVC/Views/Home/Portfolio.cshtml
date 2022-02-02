@@ -1,0 +1,230 @@
+﻿
+@{
+    ViewBag.Title = "Portfolio";
+}
+
+@*<section id="inner-headline">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="pageTitle">@ViewBag.Title</h2>
+            </div>
+        </div>
+    </div>
+</section>*@
+
+<section id="content">
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="about-logo">
+                    <h3>Port<span class="color">Folio</span></h3>
+                    <p>Below are some of the projects I have been working on. Please, check them out!</p>
+                    @*<p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>*@
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Start Gallery 1-2 -->
+<section id="gallery-1" class="content-block section-wrapper gallery-1">
+    <div class="container">
+
+        <div class="editContent">
+            <ul class="filter">
+                <li class="HillSide"><a href="#" data-filter="*">All</a></li>
+                <li><a class="waves-effect waves-dark" href="#" data-filter=".htmlcss">HTML/CSS</a></li>
+                <li><a class="waves-effect waves-dark" href="#" data-filter=".JavaScript">JavaScript</a></li>
+                <li><a class="waves-effect waves-dark" href="#" data-filter=".CSharp">C#</a></li>
+                <li><a class="waves-effect waves-dark" href="#" data-filter=".SQL">SQL</a></li>
+                <li><a class="waves-effect waves-dark" href="#" data-filter=".MVC">MVC</a></li>
+                <li><a class="waves-effect waves-dark" href="#" data-filter=".React">React</a></li>
+            </ul>
+        </div>
+        <!-- /.gallery-filter -->
+
+        <div class="row">
+            <div id="isotope-gallery-container">
+                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper htmlcss JavaScript">
+                    <div class="gallery-item">
+                        <div class="gallery-thumb">
+                            <a href="http://www.afl.mindiford.com" target="_blank"><img src="~/Content/img/works/StudioProjectBooks.jpg" class="img-responsive" alt="Stack of books next to pen and paper."></a>
+                            @*<div class="image-overlay"></div>*@
+
+                            @*<i class="fa fa-eye"></i> class="gallery-zoom"*@
+                        </div>
+                        <div class="gallery-details">
+                            <div class="editContent">
+                                <a href="http://www.afl.mindiford.com" target="_blank"><h5 class="portfolio-color">Studio Project</h5></a>
+                            </div>
+                            <div class="editContent">
+                                <p>I built this website from scratch using HTML5, CSS3, and JavaScript.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.gallery-item-wrapper -->
+                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper CSharp">
+                    <div class="gallery-item">
+                        <div class="gallery-thumb">
+                            <a href="https://github.com/MindiFord/DungeonAppFairyTale" target="_blank">
+                                <img src="~/Content/img/works/FairyTaleForest.jpg" class="img-responsive" alt="Giant, twisting tree in the forest">
+                            </a>
+                        </div>
+                        <div class="gallery-details">
+                            <div class="editContent">
+                                <a href="https://github.com/MindiFord/DungeonAppFairyTale" target="_blank"><h5 class="portfolio-color">Dungeon Application (Github Repo)</h5></a>
+                            </div>
+                            <div class="editContent">
+                                <p>This project was built exclusively with C#. It is a dungeon application with a fairy tale theme.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.gallery-item-wrapper -->
+                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper htmlcss CSharp JavaScript SQL MVC">
+                    <div class="gallery-item">
+                        <div class="gallery-thumb">
+                            @* Add StoreFront URL here *@
+                            <a href="#">
+                                <img src="~/Content/img/GroceryAisle.jpg" class="img-responsive" alt="Grocery Store Aisle">
+                            </a>
+
+                        </div>
+                        <div class="gallery-details">
+                            <div class="editContent">
+                                @* Add StoreFront URL here *@
+                                <a href="#"><h5 class="portfolio-color">StoreFront Application</h5></a>
+                            </div>
+                            <div class="editContent">
+                                <p>E-Commerce Site built with template converted to MVC, T-SQL, EF, and other cool stuff.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.gallery-item-wrapper -->
+                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper">
+                    <div class="gallery-item">
+                        <div class="gallery-thumb">
+                            @* Add URL here *@
+                            <a href="#">
+                                <img src="~/Content/img/WorkInProgress.jpg" class="img-responsive" alt="Work-In-Progress Sign">
+                            </a>
+                        </div>
+                        <div class="gallery-details">
+                            <div class="editContent">
+                                <a href="#"><h5 class="portfolio-color">Project Name</h5></a>
+                            </div>
+                            <div class="editContent">
+                                <p>Project Description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.gallery-item-wrapper -->
+                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper">
+                    <div class="gallery-item">
+                        <div class="gallery-thumb">
+                            @* Add URL here *@
+                            <a href="#">
+                                <img src="~/Content/img/WorkInProgress.jpg" class="img-responsive" alt="Work-In-Progress Sign">
+                            </a>
+                        </div>
+                        <div class="gallery-details">
+                            <div class="editContent">
+                                <a href="#"><h5 class="portfolio-color">Project Name</h5></a>
+                            </div>
+                            <div class="editContent">
+                                <p>Project Description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.gallery-item-wrapper -->
+                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper">
+                    <div class="gallery-item">
+                        <div class="gallery-thumb">
+                            @* Add URL here *@
+                            <a href="#">
+                                <img src="~/Content/img/WorkInProgress.jpg" class="img-responsive" alt="Work-In-Progress Sign">
+                            </a>
+                        </div>
+                        <div class="gallery-details">
+                            <div class="editContent">
+                                <a href="#"><h5 class="portfolio-color">Project Name</h5></a>
+                            </div>
+                            <div class="editContent">
+                                <p>Project Description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.gallery-item-wrapper -->
+                @*<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+
+                    <a href="#">
+                        <img src="~/Content/img/WorkInProgress.jpg" class="img-responsive" alt="Work-In-Progress Sign">
+                    </a>
+                </div>
+                <div class="gallery-details">
+                    <div class="editContent">
+                        <a href="#"><h5 class="portfolio-color">Project Name</h5></a>
+                    </div>
+                    <div class="editContent">
+                        <p>Project Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+                <!-- /.gallery-item-wrapper -->
+                @*<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+
+                    <a href="#">
+                        <img src="~/Content/img/WorkInProgress.jpg" class="img-responsive" alt="Work-In-Progress Sign">
+                    </a>
+                </div>
+                <div class="gallery-details">
+                    <div class="editContent">
+                        <a href="#"><h5 class="portfolio-color">Project Name</h5></a>
+                    </div>
+                    <div class="editContent">
+                        <p>Project Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+                <!-- /.gallery-item-wrapper -->
+                @*<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper">
+            <div class="gallery-item">
+                <div class="gallery-thumb">
+
+                    <a href="#">
+                        <img src="~/Content/img/WorkInProgress.jpg" class="img-responsive" alt="Work-In-Progress Sign">
+                    </a>
+                </div>
+                <div class="gallery-details">
+                    <div class="editContent">
+                        <a href="#"><h5 class="portfolio-color">Project Name</h5></a>
+                    </div>
+                    <div class="editContent">
+                        <p>Project Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+                <!-- /.isotope-gallery-container -->
+            </div>
+            </div>
+        <!-- /.row -->
+        <!-- /.container -->
+    </div>
+</section>
+<!--// End Gallery 1-2 -->
+@*</div>*@
+

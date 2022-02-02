@@ -1,0 +1,111 @@
+﻿@model PersonalSiteMP.UI.MVC.Models.ContactViewModel
+
+@{
+    ViewBag.Title = "Contact";
+}
+
+@*<section id="inner-headline">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="pageTitle">@ViewBag.Title</h2>
+            </div>
+        </div>
+    </div>
+</section>*@
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+}
+
+<section id="content">
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center">
+                <h3>If you have <span class="color">questions</span> or need <span class="color">help</span>!<br/>Please Contact Us!</h3>
+
+
+                <form name="sentMessage" id="contactForm">
+
+                    <div class="input-field">
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Name", @id = "name"} })
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        <p class="help-block"></p>
+                    </div>
+
+                    <div class="input-field">
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email", @id = "email" } })
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        <p class="help-block"></p>
+                    </div>
+
+                    <div class="input-field">
+                        @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control materialize-textarea", @rows = "10", @cols = "100", @maxlength = "999", @style = "resize:none", @placeholder = "Message" } })
+                        @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                        <p class="help-block"></p>
+                    </div>
+
+                    <div id="success"></div> 
+
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Send" class="btn btn-primary waves-dark pull-right" />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+</section>
+
+
+@*<div class="form-horizontal">
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Send" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}*@
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
